@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 微软雅黑;
+            font-size: 14px;
+            -webkit-user-select: none;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        img {
+
+            display: block;
+            border: none;
+        }
+
+        a {
+            display: block;
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover, a:active, a:visited, a:target {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .banner {
+            position: relative;
+            width: 1000px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .banner .inner {
+            width: 100%;
+            height: 100%;
+            background: url("img/default.gif") no-repeat center #e1e1e1;
+        }
+
+        .banner .inner div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .banner .inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner .bannerTip {
+            position: absolute;
+            height: 18px;
+            right: 20px;
+            bottom: 20px;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .banner .bannerTip li {
+            float: left;
+            margin-left: 10px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            cursor: pointer;
+            background: lightblue;
+        }
+
+        .banner .bannerTip li.bg { /*  被选中的背景颜色    */
+            background: red;
+        }
+
+        .banner a {
+            display: none;
+            width: 30px;
+            height: 45px;
+            position: absolute;
+            top: 50%;
+            margin-top: -22.5px;
+            background-image: url('img/pre.png');
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .banner a:hover {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        .banner a.bannerLeft {
+            left: 20px;
+            background-position: 0 0;
+        }
+
+        .banner a.bannerRight {
+            right: 20px;
+            background-position: -45px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="banner" id="banner">
+    <div class="inner" id="inner">
+        <!--<div><img src=""  trueImg="img/banner1.jpg" alt=""></div>-->
+        <!--<div><img src=""  trueImg="img/banner2.jpg" alt=""></div>-->
+        <!--<div><img src=""  trueImg="img/banner3.jpg" alt=""></div>-->
+        <!--<div><img src=""  trueImg="img/banner4.jpg" alt=""></div>-->
+
+    </div>
+    <ul class="bannerTip" id="bannerTip">
+        <!--<li class="bg"></li>-->
+        <!--<li></li>-->
+        <!--<li></li>-->
+        <!--<li></li>-->
+    </ul>
+    <a id="bannerLeft" class="bannerLeft" href="javascript:void 0"></a>
+    <a id="bannerRight" class="bannerRight" href="javascript:void 0"></a>
+
+</div>
+
+</body>
+</html>
+<script charset="utf-8" src="utils.js"></script>
+<script charset="utf-8" src="tween.js"></script>
+<script charset="utf-8" type="text/javascript" src="banner2.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
