@@ -754,6 +754,7 @@ html, body {
     font-size: .48rem;
     text-align: center;
     color: #fff;
+    opacity: 0;
 }
 
 .pageFou h2.fir {
@@ -779,6 +780,7 @@ html, body {
     color: #fff;
     font-size: .24rem;
     left: 10%;
+    opacity: 0;
 }
 
 .pageFou p.fir {
@@ -1062,7 +1064,6 @@ html, body {
     font-size: .24rem;
     text-align: center;
     line-height: .6rem;
-
 }
 
 .pageSix li.fir {
