@@ -393,38 +393,43 @@ html, body {
 
 .pageFir p.fou {
     top: 1.5rem;
-    left: -1rem;
+    left: -1.5rem;
     color: #000;
+    font-size: .30rem;
+
 
 }
-.pageFir p.fou span{
-}
-.pageFir p.fou span.is {
-    font-size: 18px;
-}
-
-#page1 p.fou {
-    animation: flipInX 2s ease 2s 1 both;
-    -webkit-animation: flipInX 2s ease 2s 1 both;
+#page1 p.fou{
+    animation:  flipInX 2s ease 2s 1 both;
+    -webkit-animation:  flipInX 2s ease 2s 1 both;
 }
 
-.pageFir p.fou span.name {
-    font-size: 24px;
+.pageFir p.fiv{
+    top: 1.8rem;
+    left: -.5rem;
+    color: #000;
+    font-size: .48rem;
     font-weight: 600;
-    margin-left: .2rem;
+
+}
+#page1 p.fiv{
+    animation:  flipInX 2s ease 2.4s 1 both;
+    -webkit-animation: flipInX 2s ease 2.4s 1 both;
 }
 
-.pageFir p.fiv {
-    top: 2.2rem;
+
+
+.pageFir p.six{
+    top: 2.5rem;
     left: 1rem;
     color: red;
     font-weight: 600;
     opacity: 0;
 }
 
-#page1 p.fiv {
-    animation: fadeInRight 2s ease 2.2s 1 both;
-    -webkit-animation: fadeInRight 2s ease 2.2s 1 both;
+#page1 p.six {
+    animation:  flipInX 2s ease 2.6s 1 both;
+    -webkit-animation: flipInX 2s ease 2.6s 1 both;
 }
 
 /*第二页样式*/
