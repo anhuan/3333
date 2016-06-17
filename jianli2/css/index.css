@@ -356,12 +356,13 @@ html, body {
     position: absolute;
     font-size: 14px;
     text-align: center;
-    opacity: 0;
+
 
 }
 
 .pageFir p.fir {
     bottom: 2rem;
+    opacity: 0;
 }
 
 #page1 p.fir {
@@ -371,6 +372,7 @@ html, body {
 
 .pageFir p.two {
     bottom: 1.5rem;
+    opacity: 0;
 }
 
 #page1 p.two {
@@ -380,6 +382,7 @@ html, body {
 
 .pageFir p.thr {
     bottom: 1rem;
+    opacity: 0;
 
 }
 
@@ -394,7 +397,8 @@ html, body {
     color: #000;
 
 }
-
+.pageFir p.fou span{
+}
 .pageFir p.fou span.is {
     font-size: 18px;
 }
@@ -415,6 +419,7 @@ html, body {
     left: 1rem;
     color: red;
     font-weight: 600;
+    opacity: 0;
 }
 
 #page1 p.fiv {
@@ -780,11 +785,12 @@ html, body {
     color: #fff;
     font-size: .24rem;
     left: 10%;
-    opacity: 0;
+
 }
 
 .pageFou p.fir {
     top: 25%;
+    opacity: 0;
 }
 
 #page4 p.fir {
@@ -794,6 +800,7 @@ html, body {
 
 .pageFou p.teo {
     top: 30%;
+    opacity: 0;
 }
 
 #page4 p.teo {
@@ -809,6 +816,7 @@ html, body {
     display: block;
     margin-bottom: .15rem;
     line-height: .45rem;
+    opacity: 0;
 }
 
 #page4 p span {
@@ -1070,6 +1078,7 @@ html, body {
     width: 2rem;
     top: 1.2rem;
     left: .6rem;
+    opacity: 0;
 }
 
 #page6 li.fir {
@@ -1081,6 +1090,7 @@ html, body {
     width: 1.9rem;
     top: 1.2rem;
     left: 4rem;
+    opacity: 0;
 }
 
 #page6 li.sec {
@@ -1094,6 +1104,7 @@ html, body {
 
 .pageSix li.thr span {
     display: block;
+    opacity: 0;
 }
 
 #page6 li.thr span {
@@ -1108,6 +1119,7 @@ html, body {
 
 .pageSix li.for span {
     display: block;
+    opacity: 0;
 }
 
 #page6 li.for span {
