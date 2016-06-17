@@ -170,7 +170,7 @@ html, body {
 
 .pageFir img, .pageTwo img ,.pageThr img{
     position: absolute;
-/ / opacity : 0;
+   opacity : 0;
 }
 
 /*第一页样式*/
@@ -356,6 +356,7 @@ html, body {
     position: absolute;
     font-size: 14px;
     text-align: center;
+    opacity: 0;
 
 }
 
@@ -388,39 +389,31 @@ html, body {
 }
 
 .pageFir p.fou {
-    font-size: 18px;
     top: 1.5rem;
     left: -1rem;
     color: #000;
 
 }
-
-#page1 p.fou {
+.pageFir p.fou span.is{
+    font-size: 18px;
+}
+#page1 p.fou{
     animation: flipInX 2s ease 2s 1 both;
     -webkit-animation: flipInX 2s ease 2s 1 both;
 }
-
-.pageFir p.fiv {
+.pageFir p.fou span.name{
     font-size: 24px;
-    top: 1.4rem;
-    color: #000;
     font-weight: 600;
-
+    margin-left: .2rem;
 }
-
-#page1 p.fiv {
-    animation: flipInX 2.2s ease 2.1s 1 both;
-    -webkit-animation: flipInX 2.2s ease 2.1s 1 both;
-}
-
-.pageFir p.six {
-    top: 2rem;
+.pageFir p.fiv {
+    top: 2.2rem;
     left: 1rem;
     color: red;
     font-weight: 600;
 }
 
-#page1 p.six {
+#page1 p.fiv {
     animation: fadeInRight 2s ease 2.2s 1 both;
     -webkit-animation: fadeInRight 2s ease 2.2s 1 both;
 }
@@ -622,6 +615,7 @@ html, body {
     top: 15%;
     text-align: center;
     color: #fff;
+    opacity: 0;
 }
 
 #page3 h2 {
@@ -633,6 +627,7 @@ html, body {
     position: absolute;
     color: #fff;
     left: 10%;
+    opacity: 0;
 }
 
 
