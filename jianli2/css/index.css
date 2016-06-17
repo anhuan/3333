@@ -356,7 +356,7 @@ html, body {
     position: absolute;
     font-size: 14px;
     text-align: center;
-
+    opacity: 0;
 
 }
 
@@ -397,14 +397,14 @@ html, body {
     color: #000;
     font-size: .30rem;
 
-
-}
-#page1 p.fou{
-    animation:  flipInX 2s ease 2s 1 both;
-    -webkit-animation:  flipInX 2s ease 2s 1 both;
 }
 
-.pageFir p.fiv{
+#page1 p.fou {
+    animation: flipInX 2s ease 2s 1 both;
+    -webkit-animation: flipInX 2s ease 2s 1 both;
+}
+
+.pageFir p.fiv {
     top: 1.8rem;
     left: -.5rem;
     color: #000;
@@ -412,14 +412,13 @@ html, body {
     font-weight: 600;
 
 }
-#page1 p.fiv{
-    animation:  flipInX 2s ease 2.4s 1 both;
+
+#page1 p.fiv {
+    animation: flipInX 2s ease 2.4s 1 both;
     -webkit-animation: flipInX 2s ease 2.4s 1 both;
 }
 
-
-
-.pageFir p.six{
+.pageFir p.six {
     top: 2.5rem;
     left: 1rem;
     color: red;
@@ -428,7 +427,7 @@ html, body {
 }
 
 #page1 p.six {
-    animation:  flipInX 2s ease 2.6s 1 both;
+    animation: flipInX 2s ease 2.6s 1 both;
     -webkit-animation: flipInX 2s ease 2.6s 1 both;
 }
 
