@@ -14,13 +14,13 @@
             step--;
             change();
             if (step === 0) {
-                step = 3;
+                step =6;
             }
         },
         onSlideNextEnd: function () {
             step++;
             change();
-            if (step === 4) {
+            if (step === 7) {
                 step = 1;
             }
         }
