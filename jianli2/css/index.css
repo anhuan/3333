@@ -1099,6 +1099,7 @@ html, body {
 
 #page6 li.sec {
     animation: zoomIn 2s ease 1.7s 1 both;
+    -webkit-animation:zoomIn 2s ease 1.7s 1 both ;
 }
 
 .pageSix li.thr {
