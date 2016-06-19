@@ -60,14 +60,14 @@
                     curImg.src = this.src;
                     curImg.style.display = 'block';
                     //处理透明度
-                    animate(curImg, {opacity: 1}, 100);
+                    animate(curImg, {opacity: 1}, 10);
                 };
                 curImg.isLoad = true;
             }(i);
         }
     }
 
-    window.setTimeout(imgDelay, 100);
+    window.setTimeout(imgDelay, 10);
 
 
 
