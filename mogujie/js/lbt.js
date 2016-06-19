@@ -82,7 +82,7 @@
             animate.setCss(oInner, "left", 0);
         }
         step++;
-        animate(oInner, {left: step * -715}, 1000);
+        animate(oInner, {left: step * -715}, 500);
         changeTip()
     }
 
@@ -92,7 +92,7 @@
             oLi.index = i;
             oLi.onmouseover = function () {
                 step = this.index;
-                animate(oInner, {left: step * -715}, 1000);
+                animate(oInner, {left: step * -715}, 500);
                 changeTip()
             }
         }
@@ -128,7 +128,7 @@
             animate.setCss(oInner, "left", step * -715);
         }
         step--;
-        animate(oInner, {left: step * -715}, 1000);
+        animate(oInner, {left: step * -715}, 500);
         changeTip()
     }
     rightBtn.onclick = autoMove;
