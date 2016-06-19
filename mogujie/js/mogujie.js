@@ -111,9 +111,10 @@ for (var i = 0; i < hover.length; i++) {
             var prev = utils.prev(this);
             utils.lastChild(this).style.display = "none";
             utils.firstChild(this).style.borderBottomColor = "#ccc";
-            this.style.borderBottomColor = "fff";
+            this.style.borderBottomColor = "#fff";
             oUl.style.borderRightColor = "red";
             if (prev) {
+                utils.firstChild(prev).style.borderBottomColor="#ccc";
                 prev.style.borderBottomColor = "#fff";
                 this.style.borderBottomColor = "#fff";
             }
