@@ -1,0 +1,8 @@
+[
+{"img":"images/banner1.jpg","desc":"蘑菇街banner1"},
+{"img":"images/banner2.jpg","desc":"蘑菇街banner2"},
+{"img":"images/banner3.jpg","desc":"蘑菇街banner3"},
+{"img":"images/banner4.jpg","desc":"蘑菇街banner4"},
+{"img":"images/banner5.jpg","desc":"蘑菇街banner5"},
+{"img":"images/banner6.jpg","desc":"蘑菇街banner6"}
+]

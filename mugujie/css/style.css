@@ -1,0 +1,1439 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    font-size: 14px;
+    /*color: #424242;*/
+}
+
+img, input {
+    border: none;
+    outline: medium;
+    vertical-align: 0;
+}
+
+a, a:hover, a:target, a:active {
+    text-decoration: none;
+    color: #333;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.w1200 {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.clear {
+    clear: both;
+}
+
+#headerT {
+    height: 31px;
+    border-bottom: 1px solid #ddd;
+    background: #f2f2f2;
+}
+
+#headerT .warp {
+    float: right;
+}
+
+#headerT .warp .s1 {
+    float: left;
+    margin-right: 15px;
+    height: 31px;
+    line-height: 31px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+#headerT .warp .s1 a {
+    width: 24px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+#headerT .warp .s1 .main {
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+}
+
+#headerT .warp .s1.s3 .main i {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(../images/car.png) no-repeat;
+    background-position: 0 -219px;
+    margin-right: 5px;
+}
+
+#headerT .warp .s1.s4 {
+}
+
+#headerT .warp .s1.s4 .main i {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(../images/car.png) no-repeat;
+    background-position: 0 -112px;
+    margin-right: 5px;
+}
+
+#headerT .warp .s1.s4 .box {
+    position: absolute;
+    top: 31px;
+    left: 925px;
+    width: 210px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #eee;
+    display: none;
+    z-index: 100;
+}
+
+#headerT .warp .s1.s5 {
+    width: 80px;
+}
+
+#headerT .warp .s1.s5 .main i {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(../images/car.png) no-repeat;
+    background-position: 0 -24px;
+    margin-left: 5px;
+    z-index: 1000;
+}
+
+#headerT .warp .s1.s5 .box {
+    position: absolute;
+    top: 31px;
+    left: 1023px;
+    width: 100px;
+    height: 90px;
+    background: #eee;
+    border: 1px solid #F2F2F2;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+    z-index: 10;
+
+}
+
+#headerT .warp .s1.s5 .box li:hover {
+    background: #ddd;
+}
+
+#headerT .warp .s1.s6 .main {
+    display: inline-block;
+    width: 130px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+#headerT .warp .s1.s6 .main i {
+    display: block;
+    float: left;
+    width: 26px;
+    height: 22px;
+    margin-left: 5px;
+    background: url(../images/car.png) no-repeat;
+
+}
+
+#headerT .warp .s1.s6 .main .right {
+    background-position: 0 -24px;
+}
+
+#headerT .warp .s1.s6 .main span {
+    float: left;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#headerT .warp .s1.s6 .main .left {
+    background-position: 0 -255px;
+}
+
+#headerT .warp .s1.s6 .box {
+    position: absolute;
+    top: 31px;
+    right: 132px;
+    width: 95px;
+    height: 120px;
+    background: #eee;
+    border: 1px solid #F2F2F2;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+    z-index: 10;
+}
+
+#headerT .warp .s1.s6 .box li:hover {
+    background: #ddd;
+}
+
+#headerB {
+    width: 100%;
+    height: 144px;
+}
+
+#headerB .logo {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 60px;
+    margin: 37px 0 20px;
+    background: url(../images/logo.png) no-repeat;
+}
+
+#headerB .search {
+    margin: 40px 0 0 99px;
+    float: left;
+    width: 502px;
+}
+
+#headerB .search .inner {
+    width: 500px;
+    height: 33px;
+    border: 1px solid #3a3a3a;
+
+}
+
+#headerB .search .inner .searchBox {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 33px;
+    cursor: pointer;
+
+}
+
+#headerB .search .inner .searchBox span {
+    margin-left: 10px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    line-height: 33px;
+    color: #333;
+    font-size: 12px;
+}
+
+#headerB .search .inner .searchBox span i {
+    margin-left: 5px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/car.png) no-repeat;
+    background-position: 0 -24px;
+}
+
+#headerB .search .inner .searchBox .shop {
+    position: absolute;
+    left: -1px;
+    top: 34px;
+    z-index: 70;
+    width: 70px;
+    border: 1px solid #ddd;
+    border-top: none;
+    text-align: center;
+    line-height: 30px;
+    background: #fff;
+    display: none;
+}
+#headerB .search .inner .searchBox .shop li:hover{
+    background: #F2F2F2;
+}
+
+#headerB .search .inner .text {
+    float: left;
+    display: block;
+    width: 350px;
+    height: 23px;
+    padding: 5px;
+    font-size: 12px;
+    color: #999;
+}
+
+#headerB .search .inner .note {
+    position: relative;
+    z-index: 21;
+    top: 34px;
+    left: -1px;
+    width: 480px;
+    height: 266px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    font-size: 12px;
+    color: #999;
+    display: none;
+    background: #fff;
+}
+
+#headerB .search .inner .btn {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 33px;
+    background: url(../images/car.png) no-repeat 27px -57px;
+    background-color: #3a3a3a;
+}
+
+#headerB .search .hotWord {
+    margin-top: 10px;
+}
+
+#headerB .search .hotWord a {
+    color: #999;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+#headerB .right {
+    position: relative;
+    float: right;
+    width: 251px;
+    height: 144px;
+    background: url(../images/headerBg.gif) no-repeat;
+}
+
+#headerB .right img {
+    position: absolute;
+    top: 57px;
+    left: 106px;
+    width: 83px;
+    height: 83px;
+
+}
+
+#bannerTop {
+    width: 100%;
+    height: 100%;
+}
+
+#bannerTop .bannerTop {
+    border-bottom: 1px solid #f46;
+}
+
+#bannerTop .bannerTop .navList {
+    height: 36px;
+}
+
+#bannerTop .bannerTop .navList li {
+    float: left;
+    margin: 0 30PX;
+    line-height: 36px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#bannerTop .bannerTop .navList li.all {
+    margin-left: 0;
+    background: #f46;
+    width: 225px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+}
+
+#bannerTop .bannerTop .navList li a {
+    margin-top: 7px;
+    font-size: 16px;
+    color: #000;
+}
+
+#bannerTop .bannerTop .navList li a:hover {
+    text-decoration: underline;
+}
+
+#bannerMain {
+    width: 100%;
+    height: 100%;
+     overflow: hidden;
+    position: relative;
+}
+
+#bannerMain .bannerNav {
+    /* position: relative;*/
+    float: left;
+    width: 223px;
+    height: 546px;
+    border: 1px solid red;
+    border-top: none;
+;
+
+}
+
+#bannerMain .bannerNav .navLi {
+    position: relative;
+    cursor: default;
+    float: left;
+    border-bottom: 1px solid #fff;
+}
+#bannerMain .bannerNav .navLi:hover{
+    border-right: 1px solid #fff;
+}
+
+
+#bannerMain .bannerNav .navLi dl {
+    margin: 0 10px;
+    padding: 8px 0 9px 10px;
+    width: 193px;
+    vertical-align: top;
+    height: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+
+#bannerMain .bannerNav .navLi dl dt {
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    width: 35px;
+    max-width: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-weight: 700;
+
+}
+
+#bannerMain .bannerNav .navLi dl dt a {
+    color: #333;
+
+}
+
+#bannerMain .bannerNav .navLi dl dt a:hover {
+    text-decoration: underline;
+}
+
+#bannerMain .bannerNav .navLi dl dd {
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#bannerMain .bannerNav .navLi dl dd span {
+    display: block;
+    overflow: hidden;
+    width: 200px;
+    height: 20px;
+    float: left;
+    text-align: left;
+    white-space: nowrap;
+}
+
+#bannerMain .bannerNav .navLi dl dd a {
+    display: block;
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 4px;
+    border-right: 1px solid #ddd;
+    font-size: 12px;
+    margin: 3px 0 0 0;
+}
+
+#bannerMain .bannerNav .navLi dl dd a:hover {
+    text-decoration: underline;
+}
+
+#bannerMain .bannerNav .navLi dl dd .red {
+    color: red;
+}
+
+#bannerMain .bannerNav .navLi .hidden {
+    display: none;
+    position: absolute;
+    padding-bottom: 20px;
+    z-index: 100;
+    left: 224px;
+    top: 0;
+    width: 290px;
+    height: 528px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-left: none;
+    overflow: hidden;
+
+}
+
+#bannerMain .bannerNav .navLi .hidden .minBox {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#bannerMain .bannerNav .navLi .hidden h4 {
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#bannerMain .bannerNav .navLi .hidden h4 a {
+    color: #333;
+
+}
+
+#bannerMain .bannerNav .navLi .hidden h4 a:hover {
+    text-decoration: underline;
+}
+
+#bannerMain .bannerNav .navLi .hidden span {
+    padding-left: 15px;
+    display: block;
+    float: left;
+
+}
+
+#bannerMain .bannerNav .navLi .hidden span a {
+    display: inline-block;
+    height: 14px;
+    margin: 5px 15px 5px 0;
+    white-space: nowrap;
+    color: #333;
+    font-size: 12px;
+}
+
+#bannerMain .bannerNav .navLi .hidden span a:hover {
+    text-decoration: underline;
+}
+
+#bannerMain .bannerNav .navLi .hidden span a.hot {
+    color: #f36;
+}
+
+#bannerMain .bannerNav .navLi .oImg {
+    margin: 40px 0 0 15px;
+}
+
+#bannerMain .bannerNav .navLi .oImg a {
+    display: block;
+    width: 250px;
+    height: 130px;
+}
+
+#bannerMain .bannerNav .navLi .oImg a img {
+    width: 250px;
+    height: 130px;
+}
+#bannerMain .main{
+    float: left;
+    margin:20px;
+}
+#bannerMain .bannerImg {
+    position: relative;
+    overflow: hidden;
+    width: 715px;
+    height: 530px;
+}
+
+#bannerMain .bannerImg .inner {
+position: relative;
+    top: 0;
+    left: 0;
+    width: 3575px;
+    height: 530px;
+}
+#bannerMain .bannerImg .inner img{
+    /*opacity: 0;
+    filter: alpha(opacity=0);*/
+}
+#bannerMain .bannerImg .inner div {
+    float: left;
+    width: 715px;
+    height: 530px;
+}
+
+
+*#bannerMain .bannerImg .btn {
+    position: absolute;
+    left: 265px;
+    bottom: 20px;
+    width: 190px;
+    height: 25px;
+    background: #fff;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+#bannerMain .bannerImg .btn li {
+    float: left;
+    width: 16px;
+    height: 16px;
+    line-height: 30px;
+    margin: 3px 14px 0 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    background: url(../images/btn2.png) no-repeat -98px -18px;
+
+}
+
+#bannerMain .bannerImg .btn li img {
+    display: none;
+    width: 20px;
+    height: 20px;
+    animation: move 3000ms;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#bannerMain .bannerImg .btn li.fir img {
+    display: block;
+}
+
+#bannerMain .bannerImg .btn li.fir {
+    margin-left: 10px;
+}
+
+#bannerMain .bannerImg .leftBtn, #bannerMain .bannerImg .rightBtn {
+    position: absolute;
+    display: block;
+    top: 40%;
+    width: 30px;
+    height: 45px;
+    background: url(../images/pre.png) no-repeat;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 10;
+}
+
+#bannerMain .bannerImg a.leftBtn {
+    display: none;
+    left: 20px;
+}
+
+#bannerMain .bannerImg a.rightBtn {
+   display: none;
+    right: 20px;
+    background-position: -45px 0;
+}
+
+#bannerMain .bannerImg a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#bannerMain .bannerRight {
+    margin-top: 20px;
+    float: right;
+    width: 218px;
+    border: 1px solid #ccc;
+}
+
+#bannerMain .bannerRight a {
+    display: block;
+    padding: 0 0 18px 0;
+    margin-left: 20px;
+    width: 180px;
+    height: 234px;
+    border-bottom: 1px dashed #ddd;
+
+}
+
+#bannerMain .bannerRight a.two {
+    padding-top: 25px;
+    border-bottom: none;
+}
+
+#bannerMain .bannerRight li img {
+    width: 180px;
+    height: 220px;
+    cursor: pointer;
+
+}
+
+#pic {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+
+#pic .borderT {
+    border-top: 1px solid #000;
+}
+
+#pic .picLeft {
+    margin-right: 20px;
+    position: relative;
+    width: 225px;
+    height: 295px;
+    float: left;
+    border: 1px solid #ddd;
+    border-bottom: 5px solid #f46;
+}
+#pic .picLeft a{
+    display: block;
+    width: 225px;
+    height: 295px;
+}
+#pic .picLeft img {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 223px;
+    height: 245px;
+}
+
+#pic .picLeft .timerTitle {
+    display: inline-block;
+    width: 100px;
+    height: 24px;
+    background: url(../images/timeTitle.png) no-repeat;
+    margin: 25px 0 0 15px;
+}
+
+#pic .picLeft .timer {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    width: 110px;
+    font-size: 16px;
+    height: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 700;
+}
+#pic .picLeft .timer span{
+    display: block;
+    float: left;
+    width: 12px;
+    font-size: 16px;
+    color: #f46;
+    vertical-align: top;
+}
+#pic .picLeft .timer .timeH,#pic .picLeft .timer .timeM,#pic .picLeft .timer .timeS{
+    font-weight: 700;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: #f46;
+    color: #fff;
+}
+
+#pic .picLeft .price {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 215px;
+    right: 20px;
+    background: url(../images/pic.png) no-repeat 0 -310px;
+}
+
+#pic .picLeft .price i {
+    font-style: normal;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 0 0 23px;
+    height: 16px;
+    line-height: 16px;
+}
+
+#pic .picLeft .price em {
+    font-style: normal;
+    color: #fff;
+    display: inline-block;
+    padding-left: 16px;
+    height: 16px;
+    line-height: 16px;
+}
+
+#pic .picCenter {
+    float: left;
+    /*margin-right: 20px;*/
+    width: 575px;
+    height: 300px;
+}
+#pic .picCenter .left a{
+    display: block;
+    width: 335px;
+    height: 300px;
+}
+#pic .picCenter .left {
+    float: left;
+    width: 335px;
+    height: 300px;
+}
+
+#pic .picCenter .left .img {
+    width: 335px;
+    height: 300px;
+}
+
+#pic .picCenter .right {
+    float: left;
+    width: 240px;
+    height: 300px;
+}
+#pic .picCenter .right a{
+    display: block;
+    width: 240px;
+    height: 300px;
+}
+#pic .picCenter .right .img {
+    width: 240px;
+    height: 300px;
+}
+
+#pic .picRight {
+    float: right;
+}
+
+#pic .picRight a {
+    display: block;
+    width: 360px;
+    height: 145px;
+    margin-bottom: 5px;
+}
+
+#pic .picRight a img {
+    width: 360px;
+    height: 145px;
+}
+
+.title {
+    margin: 60px 0 20px 0;
+    width: 100%;
+    height: 32px;
+}
+
+.title div {
+    margin-top: 10px;
+}
+
+.title .left {
+    width: 468px;
+    height: 11px;
+    float: left;
+
+}
+
+.title .left span {
+    display: block;
+    float: left;
+}
+
+.title .left span.fir {
+    width: 11px;
+    height: 11px;
+    background: url(../images/title.png) no-repeat 0 0;
+}
+
+.title .left span.sce {
+    width: 446px;
+    height: 11px;
+    background: url(../images/title.png) 0 -11px;
+}
+
+.title .left span.thr {
+    width: 11px;
+    height: 11px;
+    background: url(../images/title.png) no-repeat 0 -25px;
+}
+
+.title h2 {
+    padding: 0 84px;
+    float: left;
+    font-size: 24px;
+}
+
+.title .right {
+    width: 468px;
+    height: 11px;
+    float: left;
+
+}
+
+.title .right span {
+    display: block;
+    float: left;
+}
+
+.title .right span.fir {
+    width: 11px;
+    height: 11px;
+    background: url(../images/title.png) no-repeat 0 0;
+}
+
+.title .right span.sce {
+    width: 446px;
+    height: 11px;
+    background: url(../images/title.png) 0 -11px;
+}
+
+.title .right span.thr {
+    width: 11px;
+    height: 11px;
+    background: url(../images/title.png) no-repeat 0 -25px;
+}
+
+.good_floor1 {
+    width: 100%;
+    height: 100%;
+}
+
+.good_floor1 .good1 {
+
+    width: 225px;
+    height: 498px;
+    border: 1px solid #ddd;
+    float: left;
+}
+
+.good_floor1 .good1 a {
+    display: block;
+    float: left;
+    width: 111px;
+    height: 60px;
+    margin: 0 -1px -1px 0;
+    border: 1px solid #ddd;
+}
+
+.good_floor1 .good1 .a1 {
+    float: left;
+    width: 183px;
+    height: 213px;
+    margin: 20px;
+}
+
+.good_floor1 .good1 .a1 img {
+    width: 183px;
+    height: 213px;
+}
+
+.good_floor1 .good2 {
+    margin-left: 20px;
+    float: left;
+    width: 305px;
+    height: 500px;
+}
+
+.good_floor1 .good2 a {
+    display: block;
+}
+
+.good_floor1 .good2 a img {
+    width: 305px;
+    height: 500px;
+}
+
+.good_floor1 .good3 {
+
+    /* border: 1px solid #ddd;*/
+}
+
+.good_floor1 .good3 a {
+    text-align: center;
+    display: block;
+    float: left;
+    width: 213px;
+    height: 248px;
+    border: 1px solid #ddd;
+
+}
+
+.good_floor1 .good3 a:hover {
+    text-decoration: underline;
+}
+
+.good_floor1 .good3 a img {
+    display: block;
+    width: 175px;
+    height: 170px;
+    margin: 20px;
+}
+
+.good_floor1 .good3 a .Span {
+    width: 215px;
+    height: 24px;
+
+}
+
+.good_floor1 .good3 a .Span i {
+    font-style: normal;
+    font-size: 12px;
+}
+
+.good_floor2 {
+    width: 100%;
+    height: 100%;
+}
+
+.good_floor2 .good1 {
+    float: left;
+    width: 225px;
+    height: 498px;
+    border: 1px solid #ddd;
+}
+
+.good_floor2 .good1 .good1_pic {
+    background: #f3f3f3;
+    width: 225px;
+    height: 200px;
+}
+
+.good_floor2 .good1 .good1_pic a {
+    display: block;
+    width: 176px;
+    height: 176px;
+    padding: 15px 27px;
+}
+
+.good_floor2 .good1 .good1_pic a img {
+    width: 170px;
+    height: 170px;
+
+}
+
+.good_floor2 .good1 .good_a {
+    margin: 10px 0 0 5px;
+}
+
+.good_floor2 .good1 .good_a li {
+    width: 70px;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.good_floor2 .good1 .good_a li a {
+    margin: 10px;
+    font-size: 12px;
+    color: #333;
+
+}
+
+.good_floor2 .good1 .good_a li a:hover {
+    border: 1px solid #f2f2f2;
+}
+
+/*.good_floor2 .good2 {
+    float: left;
+}*/
+
+.good_floor2 .good2 .good_top li {
+    float: left;
+    width: 305px;
+    height: 330px;
+    margin: 0 0 20px 19px;
+}
+
+.good_floor2 .good2 .good_top li a {
+    display: block;
+    width: 305px;
+    height: 330px;
+
+}
+
+.good_floor2 .good2 .good_top .first_child a img {
+    width: 305px;
+    height: 330px;
+}
+
+.good_floor2 .good2 .good_bottom .first_child a {
+    display: block;
+    width: 305px;
+    height: 150px;
+    color: #999;
+}
+
+.good_floor2 .good2 .good_bottom {
+    height: 150px;
+    width: 100%;
+}
+
+.good_floor2 .good2 .good_bottom .first_child a img {
+    width: 130px;
+    height: 150px;
+    float: left
+}
+
+.good_floor2 .good2 .good_bottom .first_child {
+    float: left;
+    width: 305px;
+    height: 150px;
+    margin-left: 19px;
+}
+
+.good_floor2 .good2 .good_bottom .first_child a .desc {
+    float: right;
+    display: block;
+    padding-top: 50px;
+}
+
+.good_floor2 .good2 .good_bottom .first_child a .desc em {
+    font-style: normal;
+    line-height: 22px;
+    width: 165px;
+    display: block;
+}
+
+.good_floor2 .good2 .good_bottom .first_child a .fir {
+    color: #333;
+}
+
+#footer {
+    margin-top: 90px;
+    width: 100%;
+    height: 100%;
+
+    background: url(../images/fBg.png) repeat-x;
+    background: #fbfbfb;
+
+}
+
+#footer .top {
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    height: 200px;
+}
+
+#footer .top .info {
+    float: left;
+    width: 246px;
+    height: 145px;
+}
+
+#footer .top .info .logo {
+    margin-bottom: 10px;
+    display: block;
+    width: 246px;
+    height: 38px;
+    background: url(../images/logo2.png) no-repeat;
+}
+
+#footer .top .info .code p {
+    color: #999;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+#footer .top .info .code p a {
+    color: #999;
+    font-size: 12px;
+}
+
+/*#footer .top .link{
+    width: 938px;
+    height: 120px;
+
+}*/
+#footer .top .link li {
+    font-size: 12px;
+    font-weight: 700;
+    float: left;
+    margin-left: 112px;
+    color: #000;
+    line-height: 25px;
+}
+
+#footer .top .link li a {
+    font-size: 12px;
+    display: block;
+    color: #333;
+    font-weight: 400;
+}
+
+#footer .top .link li a:hover {
+    text-decoration: underline;
+}
+
+#footer .top .link li.last {
+    width: 286px;
+}
+
+#footer .top .link li.last span {
+    display: block;
+    font-size: 12px;
+}
+
+#footer .top .link li.last a {
+    float: left;
+    background: url(../images/split.png) no-repeat;
+}
+
+#footer .top .link li.last a.fir {
+    width: 50px;
+    height: 30px;
+    background-position: -495px -44px;
+}
+
+#footer .top .link li.last a.sec {
+    width: 164px;
+    height: 30px;
+    background-position: -239px -48px;
+}
+
+#footer .top .link li.last a.thr {
+    width: 70px;
+    height: 30px;
+    background-position: -406px -48px;
+}
+
+#footer .bottom {
+    border-top: 1px solid #ddd;
+    height: 50px;
+}
+
+#footer .bottom li {
+    line-height: 55px;
+    float: left;
+}
+
+#footer .bottom .link {
+
+}
+
+#footer .bottom li a {
+    font-size: 12px;
+    margin: 15px;
+}
+
+#footer .bottom li a:hover, #footer .bottom li .on {
+    color: #fd4368;
+    text-decoration: underline;
+}
+
+#rightNav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background: #202020;
+    z-index: 200;
+
+}
+
+#rightNav .nav {
+    margin-top: 50px;
+    width: 30px;
+    height: 100%;
+}
+
+#rightNav .nav p {
+    width: 30px;
+    font-size: 12px;
+}
+
+#rightNav .nav p:hover {
+    background: #ef2f23;
+
+}
+
+#rightNav .nav p a:hover {
+
+    border-bottom: 1px solid #ef2f23;
+}
+
+#rightNav .nav a {
+    display: block;
+    margin-left: 4px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #fff;
+    width: 22px;
+    text-align: center;
+}
+
+#rightNav .nav p a span {
+    color: #fff;
+    font-size: 12px;
+}
+
+#rightNav .nav p a i {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../images/icon.png) no-repeat
+}
+
+#rightNav .nav .shopCar .car .icon1 {
+    background-position: -4px 0;
+}
+
+#rightNav .nav .coupon .arch .icon2 {
+    background-position: -4px -30px;
+}
+
+#rightNav .nav .purse .money .icon3 {
+    background-position: -4px -90px;
+}
+
+#rightNav .nav .track .foot .icon4 {
+    background-position: -4px -60px;
+}
+
+#rightNav .nav .goLink {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    z-index: 1000;
+    background: #202020;
+    width: 30px;
+}
+
+#rightNav .nav .goLink a {
+    display: block;
+    width: 22px;
+    height: 20px;
+    background: url(../images/icon.png) no-repeat -4px -152px;
+}
+
+#rightNav .nav .goLink:hover {
+    background: red;
+
+}
+
+#rightNav .nav :hover a {
+    border-bottom: none;
+
+}
+
+#search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    z-index: 2000;
+    display: none;
+}
+
+#search .login {
+    float: left;
+    display: block;
+    margin-top: 7px;
+    width: 152px;
+    height: 38px;
+    background: url(../images/login.png) no-repeat;
+}
+
+#search .outer {
+    float: left;
+    margin: 7px 0 0 100px;
+    width: 700px;
+    height: 35px;
+}
+
+#search .outer .searchBox {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+#search .outer .searchBox span {
+    font-size: 12px;
+}
+
+#search .outer .searchBox i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url(../images/car.png) no-repeat 0 -28px;
+}
+
+#search .outer .searchBox .shop {
+    display: none;
+    width: 68px;
+    height: 60px;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #555;
+
+}
+
+#search .outer .searchBox:hover #search .outer .searchBox .shop {
+    background: #DDDD00;
+}
+
+#search .outer .searchBox .shop li a {
+    font-size: 12px;
+    color: #000;
+}
+
+#search .outer .searchBox .shop li {
+    line-height: 30px;
+}
+
+#search .outer .searchBox .shop li a:hover {
+
+}
+
+#search .outer .searchBox .shop li:hover {
+    background: #ddd;
+}
+
+#search .outer form .text {
+    float: left;
+    display: block;
+    width: 520px;
+    height: 25px;
+    padding: 5px;
+    font-size: 12px;
+    color: #999;
+}
+
+#search .outer form .btn {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 35px;
+    background: url(../images/car.png) no-repeat 27px -57px;
+    background-color: #f46;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+#search .outer form .note {
+    position: relative;
+    top: 36px;
+    left: 0;
+    z-index: 200;
+    width: 648px;
+    height: 266px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    font-size: 12px;
+    color: #999;
+    background: #fff;
+   /* display: none;*/
+}
+

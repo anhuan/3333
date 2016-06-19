@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft yahei", Arial, SimSun;
+    font-size: 14px;
+}
+
+img, input {
+    border: none;
+    outline: medium;
+    vertical-align: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.w900 {
+    margin: 0 auto;
+    width: 900px;
+    height: 100%;
+}
+
+.header {
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+}
+
+.header a {
+    display: block;
+    width: 220px;
+    height: 52px;
+    background: url(../images/logo.png) no-repeat;
+}
+
+.main {
+    margin-top: 30px;
+    width: 100%;
+    height: 540px;
+}
+
+.main .banner {
+    display: block;
+    float: left;
+    padding: 20px 0 0 40px;
+    width: 440px;
+    height: 330px;
+}
+
+.main .banner img {
+    width: 400px;
+    height: 300px;
+}
+
+.main .box {
+    float: right;
+    width: 320px;
+    border: 1px solid #ccc;
+    padding: 0 0 30px 40px;;
+    font-size: 14px;
+
+}
+
+.main .box .regist {
+    margin-left: -38px
+}
+
+.main .box .regist h3 {
+    padding: 7px 40px;
+    line-height: 42px;
+    color: #333;
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main .box .signForm {
+    margin-top: 20px;
+
+}
+.main .box .signForm .errorTips{
+    background: url(../images/error.png)no-repeat 12px 7px #fffff8;
+    border: 1px solid #DDDD00;
+    height: 30px;
+    line-height: 30px;
+    width: 240px;
+    padding-left: 40px;
+    color: #f55;
+    margin-bottom: 9px;
+    display: none;
+}
+.main .box .signForm .tabs {
+    margin-bottom: 15px;
+}
+
+.main .box .signForm .tabs .country {
+    float: left;
+    width: 104px;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+
+}
+
+.main .box .signForm .tabs .tell {
+    font-size: 12px;
+    height: 18px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 160px
+
+}
+
+.main .box .signForm .code {
+    margin-bottom: 15px;
+    clear: both;
+    height: 30px;
+}
+
+.main .box .signForm .code .getCode {
+    float: left;
+    height: 28px;
+    border: 1px solid #ccc;
+    padding: 0 6px;
+    width: 155px;
+    font-size:12px;
+}
+.main .box .signForm .code .button{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    width: 105px;
+    height: 30px;
+    background: #f55;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.main .box .signForm .hidden{
+    margin-top: 15px;
+    position:relative;
+    display:none;
+
+
+}
+.main .box .signForm .hidden span{
+    font-size: 12px;
+    color: #666;
+    line-height: 14px;
+}
+.main .box .signForm .hidden .change{
+    float: right;
+    margin-right:36px;
+    color: #999;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.main .box .signForm .hidden .img{
+    margin-top: 5px;
+
+
+}
+.main .box .signForm .hidden .img li{
+    width: 68px;
+    height: 68px;
+    float: left;
+    margin: 1px;
+    background: url(../images/yzm.png);
+}
+.main .box .signForm .hidden .img li.fir{
+    background-position-x: 0;
+    background-position-y: 0;
+}
+.main .box .signForm .hidden .img li.sec{
+    background-position-x: -80px;
+    background-position-y: 0px;
+}
+.main .box .signForm .hidden .img li.thr{
+    background-position-x: -160px;
+    background-position-y: 0;
+}.main .box .signForm .hidden .img li.four{
+     background-position-x: -240px ;
+     background-position-y: 0;
+ }
+
+.main .box .signForm .register{
+
+}
+.main .box .signForm .register .submit{
+    margin-top: 15px;
+    width: 285px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;font-size: 12px;
+    background: #f55;
+    color: #fff;
+    border-radius: 3px;
+
+}
+.main .box .signForm  .protocol{
+    float: left;
+    margin: 15px 0;
+}
+.main .box .signForm  .protocol span{
+    font-size: 12px;
+}
+.main .box .signForm  .protocol a{
+    font-size: 12px;
+}
+.main .box .signForm .had{
+    float: right;
+    font-size: 12px;
+    margin-right: 30px;
+    text-decoration:underline;
+}
+
+.footer {
+    padding-top: 20px;
+    height: 190px;
+    width: 100%;
+    margin-top: 50px;
+    background: url(../images/footer_bg.png);
+}
+
+.footer .linkList {
+    float: left;
+}
+
+.footer .linkList li {
+    float: left;
+    width: 130px;
+}
+
+.footer .linkList li h3 {
+    color: #333;
+}
+
+.footer .linkList li a {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+}
+
+.footer .codeBox {
+    float: right;
+    width: 180px;
+    height: 100px;
+}
+
+.footer .codeBox h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer .codeBox a {
+    display: block;
+    width: 180px;
+    height: 76px;
+    background: url(../images/code_box.png) no-repeat;
+}
+
+.footer .codeBox a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin-top: 20px;
+    border-top: 1px dashed #ccc;
+    line-height: 40px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
