@@ -18,7 +18,6 @@
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && /^2\d{2}$/.test(xhr.status)) {
             jsonData = utils.formatJSON(xhr.responseText);
-            // binddata(jsonData)
         }
     };
     xhr.send(null);
@@ -46,6 +45,7 @@
         }
         oBtn.innerHTML = str;
     }();
+
     //实现图片延迟加载
     function imgDelay() {
         for (var i = 0; i < imgList.length; i++) {
@@ -70,8 +70,9 @@
     window.setTimeout(imgDelay, 500);
 
 
+
 //4.实现自动轮播
-    var interval = 6000;
+    var interval = 3000;
     var step = 0;
     var autoTimer = window.setInterval(autoMove, interval);
 
@@ -131,7 +132,7 @@
         changeTip()
     }
     rightBtn.onclick = autoMove;
-}()
+
 
 var zhufengEffect = {
     linear: function (t, b, c, d) {
@@ -217,6 +218,7 @@ animate.setCss = function (ele, attr, val) {
         ele.style[attr] = val + "px";
     }
 }
+}()
 
 
 

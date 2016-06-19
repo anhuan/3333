@@ -583,7 +583,7 @@ position: relative;
     display: none;
     width: 20px;
     height: 20px;
-    animation: move 6000ms;
+    animation: move 3000ms;
 }
 
 @keyframes move {

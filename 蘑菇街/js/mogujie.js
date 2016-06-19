@@ -123,7 +123,11 @@ for (var i = 0; i < hover.length; i++) {
 
 
 //限时抢购
+
+//限时抢购
 ~function(){
+    var a=[];
+    a.time=setInterval(getRTime,1000);
     function getRTime(){
         var EndTime= new Date('2016/7/26 00:00:00'); //截止时间
         var NowTime = new Date();
@@ -132,15 +136,15 @@ for (var i = 0; i < hover.length; i++) {
         var h=Math.floor(t/1000/60/60%24);
         var m=Math.floor(t/1000/60%60);
         var s=Math.floor(t/1000%60);
-
-
         document.getElementById("timeH").innerHTML = h ;
         document.getElementById("timeM").innerHTML = m  ;
         document.getElementById("timeS").innerHTML = s ;
-        setInterval(getRTime,1000);
+        a.time;
+
     }
     getRTime();
-}()
+}();
+
 
 
 
