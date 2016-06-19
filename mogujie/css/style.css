@@ -546,8 +546,8 @@ position: relative;
     height: 530px;
 }
 #bannerMain .bannerImg .inner img{
-    /*opacity: 0;
-    filter: alpha(opacity=0);*/
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 #bannerMain .bannerImg .inner div {
     float: left;
@@ -583,7 +583,7 @@ position: relative;
     display: none;
     width: 20px;
     height: 20px;
-    animation: move 3000ms;
+    animation: move 6000ms;
 }
 
 @keyframes move {

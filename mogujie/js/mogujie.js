@@ -36,7 +36,6 @@ for (var i = 0; i < hover.length; i++) {
 
     window.onscroll = computedDisplay;
     function computedDisplay() {
-        ~function(){
             var curTop = document.documentElement.scrollTop || document.body.scrollTop;
             var curHeight = document.documentElement.clientHeight || document.body.clientHeight;
             oSearch.style.display = curTop > curHeight ? "block" : "none";
@@ -56,77 +55,6 @@ for (var i = 0; i < hover.length; i++) {
                     document.body.scrollTop = curTop;
                 }, interval);
             };
-        }()
-       ~function(){
-           var pic=document.getElementById("pic");
-           var imgListP = document.getElementsByTagName("img");
-           var mainS=document.getElementById("main");
-           var imgListM = document.getElementsByTagName("mainS");
-
-           //图片延迟加载
-           function imgDelayLoad(curImg) {
-               if (curImg.isLoad) {
-                   return;
-               }
-               var tempImg = new Image;
-               tempImg.src = curImg.getAttribute("trueSrc");
-               tempImg.onload = function () {
-                   curImg.src = this.src;
-                   curImg.style.display = "block";
-                   tempImg = null;
-               };
-               curImg.isLoad = true;
-           }
-
-           function allImgDelay() {
-               for (var i = 0; i < imgListP.length; i++) {
-                   var curImg = imgListP[i];
-                   if (curImg.isLoad) {
-                       continue;
-                   }
-                   var A = utils.win('clientHeight') + utils.win('scrollTop');
-                   var B = utils.offset(curImg.parentNode).top + curImg.parentNode.offsetHeight;
-                   if (A > B) {
-                       imgDelayLoad(imgListP[i]);
-                   }
-
-               }
-
-           }
-           function imgDelayLoad1(curImg) {
-               if (curImg.isLoad) {
-                   return;
-               }
-               var tempImg = new Image;
-               tempImg.src = curImg.getAttribute("trueSrc");
-               tempImg.onload = function () {
-                   curImg.src = this.src;
-                   curImg.style.display = "block";
-                   tempImg = null;
-               };
-               curImg.isLoad = true;
-           }
-
-           function allImgDelay1() {
-               for (var i = 0; i < imgListM.length; i++) {
-                   var curImg = imgListM[i];
-                   if (curImg.isLoad) {
-                       continue;
-                   }
-                   var C = utils.win('clientHeight') + utils.win('scrollTop');
-                   var D = utils.offset(curImg.parentNode).top + curImg.parentNode.offsetHeight;
-                   if (C > D) {
-                       imgDelayLoad1(imgListP[i]);
-                   }
-
-               }
-
-           }
-
-           window.setTimeout(allImgDelay, 1000);
-           window.setTimeout(allImgDelay1, 1000);
-       }()
-
     }
     var rightNav = document.getElementById("rightNav");
     var p = rightNav.getElementsByTagName("p");
@@ -197,7 +125,7 @@ for (var i = 0; i < hover.length; i++) {
 //限时抢购
 ~function(){
     function getRTime(){
-        var EndTime= new Date('2016/6/26 00:00:00'); //截止时间
+        var EndTime= new Date('2016/7/26 00:00:00'); //截止时间
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime();
         var d=Math.floor(t/1000/60/60/24);
@@ -206,9 +134,9 @@ for (var i = 0; i < hover.length; i++) {
         var s=Math.floor(t/1000%60);
 
 
-        document.getElementById("timeH").innerHTML = h + "时";
-        document.getElementById("timeM").innerHTML = m + "分";
-        document.getElementById("timeS").innerHTML = s + "秒";
+        document.getElementById("timeH").innerHTML = h ;
+        document.getElementById("timeM").innerHTML = m  ;
+        document.getElementById("timeS").innerHTML = s ;
         setInterval(getRTime,1000);
     }
     getRTime();
@@ -266,7 +194,6 @@ for (var i = 0; i < searchList.length; i++) {
         record.style.display = "none";
     };
 }
-
 
 
 

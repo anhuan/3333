@@ -12,26 +12,26 @@
     var rightBtn = document.getElementById("rightBtn");
 
 
-   // var jsonData = null;
+    var jsonData = null;
     var xhr = new XMLHttpRequest();
     xhr.open("get", "data.txt?_=" + Math.random(), false);
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && /^2\d{2}$/.test(xhr.status)) {
-           var  jsonData = utils.formatJSON(xhr.responseText);
-            binddata(jsonData)
+            jsonData = utils.formatJSON(xhr.responseText);
+            // binddata(jsonData)
         }
     };
     xhr.send(null);
 //数据绑定
-    function binddata(jsonData) {
+    ~function () {
         var str = "";
         for (var i = 0; i < jsonData.length; i++) {
             var cur = jsonData[i];
-            str += '<div><img src= " ' + cur.img + ' " /></div>';
+            str += '<div><img src= "" trueSrc="' + cur.img + '"   /></div>';
         }
         oInner.innerHTML = str;
 
-        str += '<div><img src= " ' + jsonData[0].img + ' " /></div>';
+        str += '<div><img src= "" trueSrc="' + jsonData[0].img + '"   /></div>';
         oInner.innerHTML = str;
         utils.css(oInner, 'width', (jsonData.length + 1) * 715);
 
@@ -45,18 +45,40 @@
             }
         }
         oBtn.innerHTML = str;
-    };
+    }();
+    //实现图片延迟加载
+    function imgDelay() {
+        for (var i = 0; i < imgList.length; i++) {
+            !function (i) {
+                var curImg = imgList[i];
+                if (curImg.isLoad) {
+                    return;
+                }
+                var tempImg = new Image();
+                tempImg.src = curImg.getAttribute('trueSrc');
+                tempImg.onload = function () {
+                    curImg.src = this.src;
+                    curImg.style.display = 'block';
+                    //处理透明度
+                    animate(curImg, {opacity: 1}, 500);
+                };
+                curImg.isLoad = true;
+            }(i);
+        }
+    }
+
+    window.setTimeout(imgDelay, 500);
 
 
 //4.实现自动轮播
-    var interval = 3000;
+    var interval = 6000;
     var step = 0;
     var autoTimer = window.setInterval(autoMove, interval);
 
     function autoMove() {
-        if (step ==6) {
+        if (step == 6) {
             step = 0;
-            animate.setCss(oInner, "left",0);
+            animate.setCss(oInner, "left", 0);
         }
         step++;
         animate(oInner, {left: step * -715}, 1000);
@@ -110,32 +132,33 @@
     }
     rightBtn.onclick = autoMove;
 }()
+
 var zhufengEffect = {
     linear: function (t, b, c, d) {
         return t / d * c + b;
     },
-    jsonParse:function(str){
-        return 'JSON'in window?JSON.parse(str):eval("("+str+")");
+    jsonParse: function (str) {
+        return 'JSON'in window ? JSON.parse(str) : eval("(" + str + ")");
     }
 };
 function animate(ele, obj, duration, effect, callback) {
     var fnEffect = zhufengEffect.linear;
-    var oBegin = {};//用来保存多个方向begin；
-    var oChange = {};//用来保存多个方向的change;
+    var oBegin = {};
+    var oChange = {};
 
-    var flag = 0;//用来记录各个方向的距离是否有效
+    var flag = 0;
     for (var attr in obj) {
         var target = obj[attr]
         var begin = animate.getCss(ele, attr);
         var change = target - begin;
 
-        if (change) {//判断一下此方向的运动距离有效，不为0
+        if (change) {
             oBegin[attr] = begin;
             oChange[attr] = change;
             flag++;
         }
-    }//for in 循环结束
-    if (!flag)return;//如果各个方向的运动距离都是0，则结束动画的执行
+    }
+    if (!flag)return;
     var interval = 15;
     var times = 0;
 
@@ -148,7 +171,6 @@ function animate(ele, obj, duration, effect, callback) {
             for (var attr in oChange) {
                 var change = oChange[attr];
                 var begin = oBegin[attr];
-                //var val=times/duration*change+begin;
                 var val = fnEffect(times, begin, change, duration);
                 animate.setCss(ele, attr, val);
             }
@@ -175,15 +197,13 @@ animate.getCss = function (ele, attr) {
         return parseFloat(window.getComputedStyle(ele, null)[attr]);
     } else if (attr == "opacity") {
         var val = ele.currentStyle.filter;
-        //"alpha(opacity=50)";//匹配到这样的一个字符串，然后把这个字符串中的数字部分拿到
+        //"alpha(opacity=50)";
         var reg = /alpha\(opacity=(\d+(?:\.\d+)?)\)/;
         if (reg.test(val)) {
             return RegExp.$1 / 100;
         } else {
-            //如果没有给IE中的不透明度赋值，则上边的正则为false
-            return 1;//如果没有给不透明度赋值，则应该把默认值1返回
+            return 1;
         }
-        //方法没有返回值，则此方法执行结束后留下一个undefined。即：没有返回值的方法返回的是undefined
     } else {
         return parseFloat(ele.currentStyle[attr]);
     }
