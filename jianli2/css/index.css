@@ -145,13 +145,14 @@ html, body {
 
 /*--SWIPER--*/
 .swiper-container {
-    
+
     height: 100%;
 }
 
 .swiper-slide {
     position: relative;
     height: 100%;
+    width: 100%;
 }
 
 .pageFir, .pageTwo, .pageThr, .pageFou, .pageFiv, .pageSix {
@@ -393,6 +394,7 @@ html, body {
 }
 
 .pageFir p.fou {
+    z-index: 10;
     top: 1.5rem;
     left: -1.5rem;
     color: #000;
@@ -406,6 +408,7 @@ html, body {
 }
 
 .pageFir p.fiv {
+    z-index: 10;
     top: 1.8rem;
     left: -.5rem;
     color: #000;
@@ -420,6 +423,7 @@ html, body {
 }
 
 .pageFir p.six {
+    z-index: 10;
     top: 2.5rem;
     left: 1rem;
     color: red;
@@ -831,7 +835,7 @@ html, body {
 
 /*第五页样式*/
 .pageFiv img {
-    width: 25%;
+width: 1.28rem;
 }
 
 .pageFiv img:nth-child(1) {
